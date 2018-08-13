@@ -1,0 +1,25 @@
+<head>
+  <title>Moods Counter</title>
+</head>
+
+<body>
+  <h1 class="center">Welcome to Moods Counter!</h1>
+
+  {{> moodChart }}
+  <div class="emojiButtonsContainer container center">
+    {{#each emojiMoods}}
+      {{> emojiMood}}
+    {{/each}}
+  </div>
+
+</body>
+
+<template name="moodChart">
+  <div class="container chart-container" style="max-width:500px" >
+    <canvas id="myChart"></canvas>
+  </div>
+</template>
+
+<template name="emojiMood">
+  <a class="waves-effect waves-light btn">{{emo}} {{currentMood}}</a>
+</template>
