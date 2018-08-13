@@ -1,6 +1,6 @@
-# Moods-counter
+# Moods-Counter
 
-to install and run:
+Install and run:
 
 ```
 git clone https://github.com/Ziad-Aamer/Moods-counter
